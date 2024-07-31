@@ -3,11 +3,11 @@ import asyncpg
 from datetime import datetime
 from _csv import writer
 from aiogram.types import Message
-from core.keyboards.reply import get_csv
+from MyProj.core.keyboards.reply import get_csv
 from aiogram.types import FSInputFile
 from aiogram import Bot
 
-LIST_ADMINS = [293037127]
+LIST_ADMINS = [400299512]
 CSV_FILE = 'Python_bot'
 LIST_SUBJECTS = ["user_id", "first_name", "last_name", "username"]
 
@@ -39,7 +39,7 @@ async def run_db_export(message: Message, bot: Bot):
 
 
 async def db_export():
-    connection = await asyncpg.connect(host="127.0.0.1", user="postgres", password="rootroot", database="pro_bot")
+    connection = await asyncpg.connect(host="127.0.0.1", user="santr", password="qwer4455", database="Garage_bot")
 
     try:
         async with connection.transaction():

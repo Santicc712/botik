@@ -23,4 +23,4 @@ async def set_admin(bot: Bot):
             description='Начать'
         )
         ]
-    await bot.set_my_commands(commands, BotCommandScopeChat(chat_id=293037127))
+    await bot.set_my_commands(commands, BotCommandScopeChat(chat_id=400299512))
